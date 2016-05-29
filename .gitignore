@@ -4,3 +4,12 @@
 Homestead.yaml
 Homestead.json
 .env
+
+.idea/.name
+.idea/blade.xml
+.idea/misc.xml
+.idea/LaravelBaseApp.iml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/modules.xml
+.idea/deployment.xml
