@@ -30,16 +30,16 @@ ________________
  -  Follow the link "Login to the Admin"
  - You have two accounts setup to use right away
 
-> admin@admin.com 
-> password: 111111
+>`admin@admin.com`
+>password: 111111
 > 
-> and
+>and
 > 
-> user@user.com 
-> password: 111111
+>`user@user.com`
+>password: 111111
 
- - The admin@admin.com user has full access to everything and 
- - Every new permission that is automatically added attached to this user
+ - The `admin@admin.com` user has full access to everything and 
+ - Every new permission is automatically attached to this admin user
 
 ```
 namespace App\Http\Controllers\Admin;
@@ -55,7 +55,7 @@ class PermissionController extends Controller {
 	}
 }
 ```
- - The user@user.com has the default role that is attached to every new user
+ - The `user@user.com` has the default user role that is attached to every new user
 ```
 namespace App\Http\Controllers\Auth;
 
@@ -70,10 +70,14 @@ class RegistrationController extends Controller{
 	}
 }
 ```
+
  - The default user role has no permissions attached to it by default
+ - If you try to navigate to /admin being logged in as `user@user.com` you will get a 403 permission denied page
+
+___________________
 
 
-#User access management
+# Packages used
 This Laravel setup uses **[Zizaco/entrust](https://github.com/Zizaco/entrust)** for user roles and permissions capability.
 
 #Database structure
