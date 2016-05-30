@@ -14,8 +14,9 @@ ________________
 
 1. Fork or download the repository
 2. Set up the database connection renaming & modifying the existing .env.example
-3. Run `php artisan migrate`
-4. Run `php artisan db:seed`
+3. Run `php artisan key:generate`
+4. Run `php artisan migrate`
+5. Run `php artisan db:seed`
 
 Installation complete.
 ________________
