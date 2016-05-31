@@ -13,6 +13,7 @@ ________________
 #Installation
 
 1. Fork or download the repository
+2. Run `composer install`
 2. Set up the database connection renaming & modifying the existing .env.example
 3. Run `php artisan key:generate`
 4. Run `php artisan migrate`
